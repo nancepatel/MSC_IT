@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khatra Nancy - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      text-align: right;
+    }
+
+    .contact-info div {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #2980b9;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 3px;
+      margin-top: 30px;
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .job-title {
+      font-weight: bold;
+    }
+
+    .company {
+      font-style: italic;
+    }
+
+    .date {
+      float: right;
+    }
+
+    ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+
+    .editable {
+      border: 1px dotted transparent;
+      padding: 2px;
+    }
+
+    .editable:hover {
+      border-color: #ccc;
+      background-color: #f9f9f9;
+    }
+
+    @media print {
+      .editable:hover {
+        border-color: transparent;
+        background-color: transparent;
+      }
+    }
+  </style>
+</head>
+
+<body contenteditable="true">
+  <div class="header-container">
+    <div>
+      <h1 class="editable">Khatra Nancy</h1>
+    </div>
+    <div class="contact-info">
+      <div class="editable">Surat, Gujarat</div>
+      <div class="editable">📞 +91-97258 45615</div>
+      <div class="editable">📧 nancykhatara@gmail.com</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Career Objective</h2>
+    <p class="editable">
+      Motivated and detail-oriented BCA graduate with hands-on experience in Core PHP and Laravel through live
+      internship projects. Currently based in Surat and actively seeking internship or training opportunities to enhance
+      proficiency in Python, Java, and modern web technologies. Eager to contribute to a dynamic development team while
+      expanding technical expertise in full-stack development.
+    </p>
+
+  </div>
+
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <div class="editable">
+      <strong>Frontend:</strong> HTML, CSS, Bootstrap<br>
+      <strong>Backend:</strong> Core PHP, Laravel<br>
+      <strong>Database:</strong> MySQL<br>
+      <strong>Version Control:</strong> Git<br>
+      <!-- <strong>Tools:</strong> VS Code, Postman, XAMPP -->
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <div>
+      <span class="job-title editable">PHP Developer (Core PHP)</span> |
+      <span class="company editable">Webcare Infoway, Rajkot</span> |
+      <span class="date editable">April 2025 – Present</span>
+      <ul>
+        <li class="editable">Developed backend modules and admin features using Core PHP.</li>
+        <li class="editable">Handled form validation, MySQL database queries, and session management.</li>
+      </ul>
+    </div>
+
+
+    <div>
+      <span class="job-title editable">Intern (Core PHP)</span> |
+      <span class="company editable">Webcare Infoway, Rajkot</span> |
+      <span class="date editable">Dec 2024 – Mar 2025</span>
+      <ul>
+        <li class="editable">Built CRUD operations and admin panels for internal web applications.</li>
+        <li class="editable">Integrated frontend templates with backend logic using PHP.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <div>
+      <span class="job-title editable">Bachelor of Computer Applications (BCA)</span><br>
+      <span class="company editable">Saurashtra University, Rajkot</span> |
+      <span class="date editable">Expected 2025</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li class="editable">
+        <strong>Jewellery ERP Panel</strong> – Worked on core modules in live Laravel-based ERP.
+        <br>
+        🔗 <a href="https://antonicalifescience.com/Software/Jewellery/public/" target="_blank">View Admin Panel</a>
+      </li>
+      <li class="editable">
+        <strong>TPPL Inventory Dashboard</strong> – Assisted in layout integration and backend tweaks in a PHP-based
+        inventory system.
+        <br>
+        🔗 <a href="https://tpplerp.com/admin/index.php" target="_blank">Admin Login</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="section">
+    <h2>Languages Known</h2>
+    <div class="editable">Gujarati, Hindi, English</div>
+  </div>
+
+  <div class="section">
+    <h2>Learning Goals</h2>
+    <ul>
+      <li class="editable">Master Python for backend development and automation</li>
+      <li class="editable">Learn Java for strong OOP and Android development basics</li>
+      <li class="editable">Explore frontend frameworks like React or Vue</li>
+      <li class="editable">Understand API integrations and basic DevOps tools</li>
+    </ul>
+  </div>
+
+
+  <div class="section">
+    <h2>Strengths</h2>
+    <ul>
+      <li class="editable">Quick Learner and Team Player</li>
+      <li class="editable">Strong Debugging & Problem-Solving Skills</li>
+      <li class="editable">Time Management and Deadline-Oriented</li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        const selection = window.getSelection();
+        const range = selection.getRangeAt(0);
+        const node = selection.anchorNode;
+
+        if (node.parentElement.tagName === 'LI') {
+          e.preventDefault();
+          const li = document.createElement('li');
+          li.className = 'editable';
+          node.parentElement.parentElement.insertBefore(li, node.parentElement.nextSibling);
+
+          range.setStart(li, 0);
+          range.setEnd(li, 0);
+          selection.removeAllRanges();
+          selection.addRange(range);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
